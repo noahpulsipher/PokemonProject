@@ -1,5 +1,6 @@
 package pokemon.controller;
 
-public class PokemonController {
+public class PokemonController 
+{
 
 }
