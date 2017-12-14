@@ -9,10 +9,10 @@
       <w>260</w>
       <h>100</h>
     </coordinates>
-    <panel_attributes>pokemon.model :: Vaporeon
+    <panel_attributes>pokemon.model :: Leafeon
 bg=green
 --
-+ Vaporeon (int, String) : constructor
++ Leafeon (int, String) : constructor
 
 --
 methods/constructors</panel_attributes>
@@ -130,7 +130,7 @@ bg=blue
       <w>260</w>
       <h>100</h>
     </coordinates>
-    <panel_attributes>pokemon.model :: Greninja
+    <panel_attributes>pokemon.model :: Scyther
 bg=green
 --
 + Greninja (int, String) : constructor
@@ -215,7 +215,7 @@ bg=yellow
       <w>250</w>
       <h>100</h>
     </coordinates>
-    <panel_attributes>pokemon.model :: Squirtle
+    <panel_attributes>pokemon.model :: Frogadier
 bg=blue
 --
 + Squirtle (int, String) : constructor
@@ -230,7 +230,7 @@ bg=blue
       <w>260</w>
       <h>100</h>
     </coordinates>
-    <panel_attributes>pokemon.model :: Wartortle
+    <panel_attributes>pokemon.model :: Greninja
 bg=blue
 --
 + Wartortle (int, String) : constructor
