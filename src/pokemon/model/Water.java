@@ -4,5 +4,5 @@ public interface Water
 {
 	public String surf();
 	public boolean waterShuriken(int hits);
-	public void hydroPump();
+	public boolean hydroPump();
 }
