@@ -80,8 +80,8 @@ bg=cyan
 bg=green
 --
 
-+ solarBeam() : int
-+ vineWhip(boolean) : String
++ solarBeam(boolean) : int
++ vineWhip() : boolean
 + gigaDrain() : int
 </panel_attributes>
     <additional_attributes/>
@@ -230,7 +230,7 @@ bg=blue
       <w>260</w>
       <h>100</h>
     </coordinates>
-    <panel_attributes>pokemon.model :: Greninja
+    <panel_attributes>fpokemon.model :: Greninja
 bg=blue
 --
 + Wartortle (int, String) : constructor
