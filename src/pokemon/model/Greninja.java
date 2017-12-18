@@ -1,30 +1,30 @@
 package pokemon.model;
 
-public class Greninja extends Pokemon implements Electric
+public class Greninja extends Frogadier implements Grass
 {
 	public Greninja(int number, String name)
 	{
 		super(number, name);
 	}
 	
-	public String surf()
+	public int solarBeam(boolean hit)
 	{
-		String surfing = "";
+		int damage = 20;
 		
-		return surfing;
+		return damage;
 	}
 	
-	public boolean waterShuriken(int hits)
+	public boolean vineWhip()
 	{
-		boolean threw = false;
+		boolean didHit = true;
 		
-		return threw;
+		return didHit;
 	}
 	
-	public boolean hydroPump()
+	public int gigaDrain()
 	{
-		boolean pumpHit = false;
+		int healthRegained = 15;
 		
-		return pumpHit;
+		return healthRegained;
 	}
 }
