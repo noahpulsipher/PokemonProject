@@ -1,8 +1,8 @@
 package pokemon.model;
 
-public class Scyther extends Pokemon implements Grass
+public class Torterra extends Pokemon implements Grass
 {
-	public Scyther(int number, String name)
+	public Torterra(int number, String name)
 	{
 		super(number, name);
 	}
