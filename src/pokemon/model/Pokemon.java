@@ -4,7 +4,34 @@ public abstract class Pokemon
 {
 	private int healthPoints;
 	private int attackPoints;
-	public int getHealthPoints() {
+	private double enhancementModifier;
+	private int number;
+	private String name;
+	private boolean canEvolve;
+	
+	public Pokemon(int number, String name)
+	{
+		this.name = name;
+		this.number = number;
+	}
+	
+	public final String[] getPokemonTypes()
+	{
+		Class<?> [] types = getClass().getInterfaces();
+		String [] pokeTypes = new String[types.length];
+		
+		for(int index = 0; index < types.length; index++)
+		{
+			String currentInterface = types[index].getCanonicalName();
+			currentInterface = currentInterface.replace(this.getClass().getPackage().getName() + ".", "");
+			pokeTypes[index] = currentInterface;
+		}
+		
+		return pokeTypes;
+	}
+	
+	public int getHealthPoints() 
+	{
 		return healthPoints;
 	}
 
@@ -20,12 +47,12 @@ public abstract class Pokemon
 		this.attackPoints = attackPoints;
 	}
 
-	public double getEnhancementMoifier() {
-		return enhancementMoifier;
+	public double getEnhancementModifier() {
+		return enhancementModifier;
 	}
 
-	public void setEnhancementMoifier(double enhancementMoifier) {
-		this.enhancementMoifier = enhancementMoifier;
+	public void setEnhancementModifier(double enhancementModifier) {
+		this.enhancementModifier = enhancementModifier;
 	}
 
 	public String getName() {
@@ -48,31 +75,7 @@ public abstract class Pokemon
 		return number;
 	}
 
-	private double enhancementMoifier;
-	private int number;
-	private String name;
-	private boolean canEvolve;
 	
-	public Pokemon (int number, String name)
-	{
-		this.name = name;
-		this.number = number;
-	}
-	
-	public final String[] getPokemonTypes()
-	{
-		Class<?> [] types = getClass().getInterfaces();
-		String [] pokeTypes = new String[types.length];
-		
-		for(int index = 0; index < types.length; index++)
-		{
-			String currentInterface = types[index].getCanonicalName();
-			currentInterface = currentInterface.replace(this.getClass().getPackage().getName() + ".", "");
-			pokeTypes[index] = currentInterface;
-		}
-		
-		return pokeTypes;
-	}
 	
 	public String toString()
 	{
